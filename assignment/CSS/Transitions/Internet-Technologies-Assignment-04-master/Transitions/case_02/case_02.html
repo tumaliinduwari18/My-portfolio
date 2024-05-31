@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="maheeshi-n-jayarathna">
+    <meta name="description" content="internet-technologies-assigment-04-case02">
+    <title>Assignment 04 Case 02</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            background-color: dodgerblue;
+        }
+
+        section>div{
+            width: 400px;
+            height: 400px;
+            aspect-ratio: 1/1;
+            background-color: grey;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section>div>h1{
+            width: max-content;
+            height: max-content;
+            color: white;
+            font-size:40px;
+            font-family: 'Ubuntu', sans-serif;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+
+        div::before{
+            content: "";
+
+            background-color: grey;
+
+            border: 15px solid white;
+            border-top: 15px solid red;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div>
+        <h1>RWAD</h1>
+    </div>
+
+</section>
+
+</body>
+</html>

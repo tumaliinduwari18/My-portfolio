@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="maheeshi-n-jayarathna">
+  <meta name="description" content="internet-technologies-assigment-04-case05">
+  <title>Assignment 04 Case 05</title>
+
+  <style>
+    main {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    main > section {
+      height: 100%;
+      width: 400%;
+      display: flex;
+      animation-name: my-animation;
+      animation-duration: 10s;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    main > section > div {
+      height: 100%;
+      width: 100%;
+    }
+
+    main > section > div:nth-child(1) {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bb/Sarek_National_Park%2C_Jokkmokk%2C_Sweden_%28Unsplash%29.jpg");
+      background-size: cover;
+
+    }
+
+    main > section > div:nth-child(2) {
+      background-image: url("https://wallpapercrafter.com/desktop/147207-digital-art-hummingbird-animals-birds.jpg");
+      background-size: cover;
+
+    }
+
+    main > section > div:nth-child(3) {
+      background-image: url("https://mcdn.wallpapersafari.com/medium/81/2/YHfENu.jpg");
+      background-size: cover;
+
+    }
+
+    main > section > div:nth-child(4) {
+      background-image: url("https://i.pinimg.com/564x/60/fc/e9/60fce93da96feee76fe86f747419d813.jpg");
+      background-size: cover;
+
+    }
+
+    @keyframes my-animation {
+      0%,20%{
+        transform: translateX(0);
+      }
+      30%,50% {
+        transform: translateX(-25%);
+      }
+      60%,80% {
+        transform: translateX(-50%);
+      }
+      90%,100% {
+        transform: translateX(-75%);
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</main>
+</body>
+</html>

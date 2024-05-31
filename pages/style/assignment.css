@@ -1,0 +1,51 @@
+body{
+    background-color: #5c636a;
+}
+
+.assignment button{
+    display: block;
+    align-self: center;
+    margin: 25px auto;
+    border: none;
+    padding: 10px 44px;
+    font-size: 24px;
+    width: 50%;
+    position: relative;
+    border-radius: 50px;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+
+}
+
+.assignment a{
+    text-decoration: none;
+}
+
+/*.assignment .git{*/
+/*    background: white;*/
+/*    display: block;*/
+/*    text-align: center;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    border-radius: 100%;*/
+/*    font-size: 35px;*/
+/*    color: #ffffff;*/
+/*    margin: 10px;*/
+/*}*/
+
+
+/*.assignment .git-button{*/
+/*    position: relative;*/
+/*    background: #2d3436;*/
+/*    left: 338px;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    bottom: 2px;*/
+/*}*/
+
+.assignment .git{
+    display: block;
+    align-self: center;
+    position: relative;
+    left: 900px;
+    bottom: 40px;
+}

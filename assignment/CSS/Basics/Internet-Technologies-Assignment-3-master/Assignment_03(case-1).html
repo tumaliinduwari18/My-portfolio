@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="maheeshi-n-jayarathna">
+    <title>Assignment 03 case 01</title>
+    <style>
+
+        section:first-child{
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            /*right: 0;*/
+            top: 0;
+            /*bottom: 0;*/
+        }
+
+        section:nth-child(2) {
+            width: 50vw;
+            height: 50vh;
+            background-color: green;
+            position: absolute;
+            /*left: 50vw;*/
+            right: 0;
+            top: 0;
+            /*bottom: 0;*/
+        }
+
+        section:nth-child(3) {
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+            position: absolute;
+            left: 0;
+            /*right: 0;
+            top: 50vh;*/
+            bottom: 0;
+        }
+
+        section:nth-child(4) {
+            width: 50vw;
+            height: 50vh;
+            background-color: deeppink;
+            position: absolute;
+            /*left: 50vw;*/
+            right: 0;
+            /*top: 50vh;*/
+            bottom: 0;
+        }
+
+        section:first-child > div:first-child {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100px;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:first-child > div:nth-child(2) {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(2) > div:first-child {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100px;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(2) > div:nth-child(2) {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(3) > div:first-child {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100px;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(3) > div:nth-child(2) {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(4) > div:first-child {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100px;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(4) > div:nth-child(2) {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(5) {
+            width: 180px;
+            height: 180px;
+            background-color: white;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(5) > div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100px;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section:nth-child(6) > div:first-child {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            /*border-radius: 100px;*/
+            border-bottom-right-radius: 200px;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        section:nth-child(6) > div:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            /*border-radius: 100px;*/
+            border-bottom-left-radius: 200px;
+
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        section:nth-child(6) > div:nth-child(3) {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            /*border-radius: 100px;*/
+            border-top-right-radius: 200px;
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        section:nth-child(6) > div:nth-child(4) {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            /*border-radius: 100px;*/
+            border-top-left-radius: 200px;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        section:nth-child(6) > div:nth-child(5) {
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            /*border-radius: 100px;*/
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        section:nth-child(6) > div:nth-child(6) {
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            /*border-radius: 100px;*/
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+
+        <div></div>
+    </section>
+
+    <section>
+        <div></div>
+
+        <div></div>
+    </section>
+
+    <section>
+        <div></div>
+
+        <div></div>
+    </section>
+
+    <section>
+        <div></div>
+
+        <div></div>
+    </section>
+
+    <section>
+        <div></div>
+    </section>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

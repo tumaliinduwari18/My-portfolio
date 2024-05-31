@@ -1,0 +1,77 @@
+.navbar-brand{
+    font-weight: bold;
+    color: #f1c40f;
+}
+thead{
+    position: sticky;
+    top: 0;
+}
+.my-custom-scrollbar {
+    position: relative;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+.nav-link:hover{
+    color: black;
+}
+#main{
+    display: block;
+    width: 100%;
+}
+#order,#item,#customer{
+    border: 2px solid #e1e1e1;
+    margin-top: 56px;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: none;
+}
+.carousel-item{
+    height: 640px;
+    background-color: #ffffff;
+}
+.carousel-item img{
+    width: 80%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#order .container-fluid > .row > div{
+    background-color: #ffffff;
+    border: 10px solid #f1f1f1;
+}
+#order .container-fluid > .row > div span,
+#item .container-fluid > div:first-child > div:first-child,
+#customer .container-fluid > div:first-child > div:first-child{
+    background-color: #3498db;
+    color: #ffffff;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+#order h6,#item h6,#customer h6{
+    font-size: 12px;
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+}
+.summery{
+    position: relative;
+    top: 15px;
+}
+.summery div{
+    border: 5px solid transparent;
+    position: relative;
+    top: 15px;
+}
+
+td {
+    border: 1px #DDD solid;
+    padding: 5px;
+    cursor: pointer;
+}
+.selected {
+    background-color: #3498db;
+    color: #FFF;
+}

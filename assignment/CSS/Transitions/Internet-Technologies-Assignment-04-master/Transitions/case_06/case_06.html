@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="maheeshi-n-jayarathna">
+    <meta name="description" content="internet-technologies-assigment-04-case06">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 04 Case 06</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        body {
+            margin: 0;
+        }
+        @media (-webkit-device-pixel-ratio: 1.25) {
+            section > aside > aside {
+                left: 650px !important;
+            }
+        }
+
+        section {
+            position: relative;
+            overflow: scroll;
+            height: 100vh;
+            width: 100vw;
+            background: url("../../assests/sky.jpg") center;
+            background-size: cover;
+        }
+
+        section > section:nth-child(1) {
+            position: absolute;
+            height: 30vh;
+            width: 200vw;
+            bottom: 30vh;
+            background: url("../../assests/city.png") center;
+            background-repeat: space;
+            background-size: 100vw 30vh;
+            animation-name: background;
+            animation-duration: 10s;
+            animation-timing-function: ease-out;
+        }
+
+        section > section:nth-child(2) {
+            position: absolute;
+            bottom: 0;
+            height: 30vh;
+            width: 200vw;
+            background: url("../../assests/road.jpg") center;
+            background-size: cover;
+            animation-name: background;
+            animation-duration: 10s;
+            animation-timing-function: ease-out;
+        }
+
+        section > aside > img:first-child {
+            height: 120px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 20vh;
+        }
+
+        section > aside > aside {
+            display: flex;
+            width: 242px;
+            position: absolute;
+            bottom: 20vh;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+
+        section > aside > aside > img {
+            height: 55px;
+            margin-right: 122px;
+            animation-name:wheels;
+            animation-duration: 35s;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes background {
+            from {
+                transform: translate(0vw);
+            }
+
+            to {
+                transform: translate(-100vw);
+            }
+
+        }
+
+        @keyframes wheels {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(360deg);
+            }
+            50% {
+                transform: rotate(360deg);
+            }
+
+            75% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <section></section>
+    <section></section>
+    <aside>
+        <img src="../../assests/car.png" alt="car image">
+        <aside>
+            <img src="../../assests/wheel.png" alt="wheel 01 image">
+            <img src="../../assests/wheel.png" alt="wheel 02 image">
+        </aside>
+    </aside>
+</section>
+</body>
+</html>

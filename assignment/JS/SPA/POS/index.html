@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="maheeshi-n-jayarathna">
+    <meta name="description" content="internet-technologies-assigment-07">
+    <title>Mini Pos</title>
+    <link rel="stylesheet" href="Assests/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assests/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Assests/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="Assests/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="Assests/style/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow mb-5 bg-white fixed-top" >
+    <div class="container-fluid " >
+        <a class="navbar-brand" href="index.html">
+            Maheeshi's POS System
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Customer</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn" type="submit">
+                    <i class="fa-solid fa-user-plus"></i>Sign Up</button>
+                <button class="btn" type="submit">
+                    <i class="fa-solid fa-right-from-bracket"></i>Log Out</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<section id="home">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img.freepik.com/free-vector/isometric-crm-illustration_52683-83950.jpg?w=740&t=st=1682531894~exp=1682532494~hmac=997a2cccf9ffa5b1cee826fddf59dbdf1e5ed78eb374867c7d7f7af81f91d457" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-vector/store-staff-check-number-products-that-must-be-delivered-customers-during-day_1150-51079.jpg?w=740&t=st=1682532521~exp=1682533121~hmac=759ea1d5346192e339794802b6d32266d82aad71792d2e7b330bf1995f56ac3d" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-vector/tiny-people-preparing-invoice-computer-isolated-flat-illustration_74855-11116.jpg?w=740&t=st=1682532457~exp=1682533057~hmac=da971313f4ee71da16b1fd8f3fec85e962bd26da84d06afc91ffc1744bf28d19" class="d-block" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<section id="order">
+    <h6>Home>Orders</h6>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                    <span>Invoice Details</span>
+                </div>
+                <div class="row" >
+                    <div class="col-lg-12">
+                        <form class="row g-3">
+                            <div class="col-lg-6">
+                                <label for="txtOrderId" class="form-label">Order ID :</label>
+                                <input type="text" class="form-control" placeholder="O001" id="txtOrderId">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="txtOrderDate" class="form-label">Date :</label>
+                                <input type="text" class="form-control" placeholder="07/06/2020" id="txtOrderDate">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="selectOrderCustomerId" class="form-label">Customer ID:</label>
+                                <select id="selectOrderCustomerId" class="form-select"></select>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="txtOrderCustomerNIC" class="form-label">Customer NIC :</label>
+                                <input type="text" class="form-control" placeholder="200127103989" id="txtOrderCustomerNIC">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="txtOrderCustomerName" class="form-label">Name :</label>
+                                <input type="text" class="form-control" placeholder="Shamodha" id="txtOrderCustomerName">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="txtOrderCustomerSalary" class="form-label">Salary :</label>
+                                <input type="number" class="form-control" placeholder="1000000.00" id="txtOrderCustomerSalary">
+                            </div>
+                            <div class="col-12" style="margin-bottom: 25px">
+                                <label for="txtOrderCustomerAddress" class="form-label">Address :</label>
+                                <input type="text" class="form-control" id="txtOrderCustomerAddress" placeholder="Kurunegala">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="row">
+                    <span>Item Select</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form class="row g-3 ">
+                            <div class="col-lg-6">
+                                <label for="selectOrderItemCode" class="form-label">Item Code :</label>
+                                <select id="selectOrderItemCode" class="form-select"></select>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="txtOrderItemDescription" class="form-label">Description :</label>
+                                <input type="text" class="form-control" id="txtOrderItemDescription" placeholder="Keerisamba 5Kg">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="txtOrderItemUnitPrice" class="form-label">Unit Price :</label>
+                                <input type="number" class="form-control" id="txtOrderItemUnitPrice" placeholder="525.00">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="txtOrderItemQtyOnHand" class="form-label">Qty On Hand :</label>
+                                <input type="number" class="form-control" id="txtOrderItemQtyOnHand" placeholder="525.00">
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="txtOrderItemQty" class="form-label">Order Quantity :</label>
+                                <input type="number" class="form-control" id="txtOrderItemQty" placeholder="2">
+                            </div>
+                            <div class="col-auto me-auto"></div>
+                            <div class="col-auto" style="margin-top: 35px; margin-bottom: 25px">
+                                <button type="button" id="btnAddToCartItem" class="justify-content-end btn btn-primary">Add to cart</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <form  class="row g-3 summery">
+                    <div class="col-lg-12" style="color: #3498db;font-weight: bold; font-size: 22px">
+                            Total :
+                            <label id="lblTotal">0</label>
+                            Rs/=
+                    </div>
+                    <div class="col-lg-12" style="color: #2ecc71;font-weight: bold; font-size: 22px">
+                        SubTotal :
+                        <label id="lblSubTotal">0</label>
+                        Rs/=
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="txtCash" class="form-label">Cash :</label>
+                        <input type="number" class="form-control" id="txtCash" placeholder="5000">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="txtDiscount" class="form-label">Discount :</label>
+                        <input type="number" class="form-control" id="txtDiscount" placeholder="10">
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="txtBalance" class="form-label">Balance :</label>
+                        <input type="number" class="form-control" id="txtBalance" placeholder="10">
+                    </div>
+                    <div align="center" class="col-lg-12 center-block" style="margin-bottom: 30px">
+                        <button type="button" id="btnOrderPurchase" style="font-weight: bold" class="btn btn-success">Purchase</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="my-custom-scrollbar table-wrapper-scroll-y" style="height: 132px">
+                <table class="table" style="background-color: #ffffff">
+                    <thead class="table-dark">
+                        <tr>
+                            <th class="col-3">Item Code</th>
+                            <th class="col-3">Item Name</th>
+                            <th class="col-2">Price</th>
+                            <th class="col-2">Quantity</th>
+                            <th class="col-2">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblOrderCartBody" ></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="item">
+    <h6>Home>Items</h6>
+    <div class="container-fluid">
+        <div class="row" style=";background-color: #ffffff;border: 15px solid #f1f1f1;">
+            <div class="col-lg-12" style="padding: 0;">
+                <span style="padding-left: 10px">Item Search</span>
+            </div>
+            <div class="col-lg-9">
+                <input id="txtSearch" style="width: 95%;margin-left: 20px;margin-top: 20px;margin-bottom: 20px" type="text" placeholder="Input Item Name/Code Here">
+            </div>
+            <div class="col-lg-1">
+                <select id="selectSearchType" style="width: 100px;margin: 20px" class="form-select">
+                    <option selected>Name</option>
+                    <option>Code</option>
+                </select>
+            </div>
+            <div class="col-lg-1">
+                <button id="btnSearch" type="submit" style="font-weight: bold;margin: 20px" data-bs-toggle="modal" data-bs-target="#editItemModel" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <button type="button" disabled id="btnItemEdit"  style="width: 100px;margin: 10px" data-bs-toggle="modal" data-bs-target="#editItemModel" class="btn btn-warning">Edit</button>
+                <div id="editItemModel" class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: #3498db">
+                                <h5 class="modal-title">Update Item</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="txtEditItemCode" class="form-label">Item Code :</label>
+                                    <input type="text" class="form-control" id="txtEditItemCode" placeholder="I001">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtEditItemName" class="form-label">Item Name :</label>
+                                    <input type="text" class="form-control" id="txtEditItemName" placeholder="Keerisamba 5kg">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtEditItemPrice" class="form-label">Item Price :</label>
+                                    <input type="number" class="form-control" id="txtEditItemPrice" placeholder="525.00">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtEditItemQuantity" class="form-label">Item Quantity</label>
+                                    <input type="number" class="form-control" id="txtEditItemQuantity" placeholder="2">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="btnItemUpdate" class="btn btn-primary">Update</button>
+                                <button type="button" id="btnItemDelete" data-bs-dismiss="modal" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <button type="button" id="btnItemNew" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newItemModel" style="width: 100px;margin: 10px">New</button>
+                <div id="newItemModel" class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: #3498db">
+                                <h5 class="modal-title">New Item</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="txtNewItemCode" class="form-label">Item Code :</label>
+                                    <input type="text" class="form-control" id="txtNewItemCode" placeholder="I001">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtNewItemName" class="form-label">Item Name :</label>
+                                    <input type="text" class="form-control" id="txtNewItemName" placeholder="Keerisamba 5kg">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtNewItemPrice" class="form-label">Item Price :</label>
+                                    <input type="number" class="form-control" id="txtNewItemPrice" placeholder="525.00">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtNewItemQuantity" class="form-label">Item Quantity</label>
+                                    <input type="number" class="form-control" id="txtNewItemQuantity" placeholder="2">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" id="btnItemSave" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-custom-scrollbar table-wrapper-scroll-y" style="height: 339px">
+        <table id="tblItem" class="table" style="background-color: #ffffff">
+            <thead class="table-success">
+            <tr>
+                <th class="col-3">Item Code</th>
+                <th class="col-3">Item Name</th>
+                <th class="col-2">Quantity</th>
+                <th class="col-2">Price</th>
+            </tr>
+            </thead>
+            <tbody id="tblItemBody"></tbody>
+        </table>
+    </div>
+</section>
+<section id="customer">
+    <h6>Home>Customers</h6>
+    <div class="container-fluid">
+        <div class="row" style=";background-color: #ffffff;border: 15px solid #f1f1f1;">
+            <div class="col-lg-12" style="padding: 0;">
+                <span style="padding-left: 10px">Customer Search</span>
+            </div>
+            <div class="col-lg-9">
+                <input id="txtSearchCustomer" style="width: 95%;margin-left: 20px;margin-top: 20px;margin-bottom: 20px" type="text" placeholder="Input customer Name/Id Here">
+            </div>
+            <div class="col-lg-1">
+                <button type="button" style="font-weight: bold;margin: 20px"  data-bs-target="#editCustomerModel" data-bs-toggle="modal" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <button disabled type="button" style="width: 100px;margin: 10px" data-bs-target="#editCustomerModel" data-bs-toggle="modal" id="btnCustomerEdit" class="btn btn-warning">Edit</button>
+                <div id="editCustomerModel" class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: #3498db">
+                                <h5 class="modal-title">Update Customer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="txtEditCustomerID" class="form-label">Customer ID :</label>
+                                    <input type="text" class="form-control" id="txtEditCustomerID" placeholder="C001">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtEditCustomerNIC" class="form-label">Customer NIC :</label>
+                                    <input type="text" class="form-control" id="txtEditCustomerNIC" placeholder="C001">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtEditCustomerName" class="form-label">Customer Name :</label>
+                                    <input type="text" class="form-control" id="txtEditCustomerName" placeholder="Shamodha">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtEditCustomerSalary" class="form-label">Salary :</label>
+                                    <input type="number" class="form-control" id="txtEditCustomerSalary" placeholder="1000000.00">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtEditCustomerAddress" class="form-label">Address :</label>
+                                    <input type="text" class="form-control" id="txtEditCustomerAddress" placeholder="kurunegala">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="btnCustomerUpdate" class="btn btn-primary">Update</button>
+                                <button type="button" id="btnCustomerDelete" data-bs-dismiss="modal" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <button type="submit" style="width: 100px;margin: 10px" data-bs-toggle="modal" data-bs-target="#newCustomerModel" class="btn btn-success">New</button>
+                <div id="newCustomerModel" class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: #3498db">
+                                <h5 class="modal-title">New Customer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="txtNewCustomerID" class="form-label">Customer ID :</label>
+                                    <input type="text" class="form-control" id="txtNewCustomerID" placeholder="C001">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtNewCustomerNIC" class="form-label">Customer NIC :</label>
+                                    <input type="text" class="form-control" id="txtNewCustomerNIC" placeholder="C001">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtNewCustomerName" class="form-label">Customer Name :</label>
+                                    <input type="text" class="form-control" id="txtNewCustomerName" placeholder="Shamodha">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtNewCustomerSalary" class="form-label">Salary :</label>
+                                    <input type="number" class="form-control" id="txtNewCustomerSalary" placeholder="1000000.00">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtNewCustomerAddress" class="form-label">Address :</label>
+                                    <input type="text" class="form-control" id="txtNewCustomerAddress" placeholder="kurunegala">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" id="btnCustomerSave" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-custom-scrollbar table-wrapper-scroll-y" style="height: 339px">
+        <table id="tblCustomer" class="table" style="background-color: #ffffff">
+            <thead class="table-success">
+            <tr>
+                <th class="col-3">Customer ID</th>
+                <th class="col-3">NIC</th>
+                <th class="col-3">Name</th>
+                <th class="col-2">Salary</th>
+                <th class="col-2">Address</th>
+            </tr>
+            </thead>
+            <tbody id="tblCustomerBody">
+
+            </tbody>
+        </table>
+    </div>
+</section>
+<script src="Assests/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="Assests/lib/jQuery/jquery-3.6.4.min.js"></script>
+<script src="Assests/js/function.js"></script>
+
+<script type="module" src="model/customer.js"></script>
+<script type="module" src="controller/CustomerController.js"></script>
+
+<script type="module" src="model/item.js"></script>
+<script type="module" src="controller/ItemController.js"></script>
+
+<script type="module" src="model/order.js"></script>
+<script type="module" src="controller/OrderController.js"></script>
+
+<script type="module" src="model/orderDetails.js"></script>
+
+<script type="module" src="DB/db.js"></script>
+</body>
+</html>
