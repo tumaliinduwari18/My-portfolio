@@ -7,15 +7,19 @@
 }
 body{
     overflow-x: hidden;
+    
 }
 
-
+.home{
+    background-color: black;
+}
 
 .navbar {
     padding: 15px 0;
-    background: linear-gradient(109.6deg, #ea8685 11.2%, #38ada9 91.1%);
+    background: linear-gradient(109.6deg, #2d2c2c 11.2%, #585a5a 91.1%);
     border-bottom-left-radius: 15%;
     border-bottom-right-radius: 15%;
+    color: white;
 }
 .navbar .nav-link{
     font-size: 18px;
@@ -43,7 +47,7 @@ body{
 }
 
 .home{
-    background-color: #5c636a;
+    background-color: #101113;
     margin-top: 58px;
     padding: 40px 0;
 }
