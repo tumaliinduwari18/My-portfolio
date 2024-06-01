@@ -39,7 +39,7 @@ body{
 .home-about-button {
     color: #ffffff;
     border: 3px solid #f06;
-    background-image: linear-gradient(45deg, #f06, #3cf, #f06 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f06, rgb(33, 41, 44), #f06 50%, transparent 50%);
     background-size: 500px;
     background-repeat: no-repeat;
     -webkit-transition: background 300ms ease-in-out;
@@ -70,7 +70,7 @@ body{
 }
 
 .home-content>h1{
-    color: #38ada9;
+    color: red;
     font-family: 'Sigmar',cursive;
     font-size: 45px;
 }
@@ -816,9 +816,9 @@ body{
     height: 75.4px;
 
     border-top: 3px solid #ffffff;
-    background: linear-gradient(45deg, #f06, #3cf);  /* fallback for old browsers */
-    background: linear-gradient(45deg, #f06, #3cf);
-    background: linear-gradient(45deg, #f06, #3cf);
+    background: linear-gradient(45deg, rgb(32, 29, 30), rgb(34, 35, 36));  /* fallback for old browsers */
+    background: linear-gradient(45deg, rgb(32, 29, 30), rgb(34, 35, 36));
+    background: linear-gradient(45deg, rgb(32, 29, 30), rgb(34, 35, 36));
 }
 #footer_of_site>p{
     color: white;
